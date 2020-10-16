@@ -1,0 +1,183 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{ #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\vspace{-20pt}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/vivek-anand-jain/}{\Large Vivek Jain}} & Email:  \href{mailto:jain.vivek.anand@gmail.com}{jain.vivek.anand@gmail.com}\\
+    \href{https://github.com/vivek-anand-jain/}{\faGithub \hspace{1pt} https://github.com/vivek-anand-jain}& Mobile:  +1-951-772-5682 \\
+  \href{https://www.linkedin.com/in/vivek-anand-jain/}{\faLinkedin\hspace{1pt} https://www.linkedin.com/in/vivek-anand-jain/}& \textit{Networking and Systems}\\
+  \href{https://vivek-anand-jain.github.io}{\faChrome \hspace{1pt} https://vivek-anand-jain.github.io} & \textit{C/C++, Java, Python, Go}
+\end{tabular*}
+
+\vspace{-10pt}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California Riverside}{Riverside, CA, USA}
+      {Pursuing Ph.D. advised by Dr. K. K. Ramakrishnan; GPA: 3.95 / 4}{September 2019 - Present}
+    \resumeSubheading
+      {National Institute of Technology Karnataka}{Surathkal, Karnataka, India}
+      {M.Tech in Computer Science and Engineering; GPA: 8.56 / 10}{Aug 2016 - June 2018}
+    \resumeSubheading
+      {Shri Guru Gobind Singhji Institute of Engineering and Technology }{Nanded, MH, India}
+      {B.Tech in Computer Science and Engineering; GPA: 8.35 / 10}{Aug 2011 - June 2015}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+ \resumeSubHeadingListStart
+ \resumeSubItem{Programming Languages:}{C/C++, Python, Java, Go}
+
+  \resumeSubItem{Domain:}{Computer Networks, Data center Networks, Cellular Networks, Operating Systems, Distributed Systems}
+ 
+  \resumeSubItem{Technologies:}{Docker Containers, Microservices, Serverless, NOSQL, RPC, REST, Unit testing}
+ 
+ \resumeSubItem{Framework:}{Kubernetes, Knative, Istio, Cassandra, gRPC, protobuf, Openstack, Linux device drivers, gTest}
+
+ \resumeSubItem{Build Systems and Version control:}{Bazel, Make, waf, Git, Gerrit, Maven}
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\vspace{-5pt}
+     \resumeSubheading
+      {ns-3 \textit{(Open Source)}}{}
+      {Active contributor for TCP module}{Dec 2017 -- Present}
+      \resumeItemListStart
+      % \textit{Technology stack: C++, waf}
+        \resumeItem{}{Developed various AQM \& TCP model: ECN, PRR, DCTCP, BBR, PI, BLUE, SFBlue }
+        \resumeItem{}{Serving as Google Code In \& Google Summer of Code mentor for the ns-3 project from last 2 years}
+      \resumeItemListEnd
+% \subsection*{WORK EXPERIENCE}
+    \resumeSubheading{Tarana Wireless India Pvt. Ltd.}{Pune, India}
+      {Network Software Engineer}{Jun 2018 -- September 2019}
+      \resumeItemListStart
+      %\textit{Technology stack: C++, gRPC, bazel, gTest, protobuf, Linux device driver, Go}
+        \resumeItem{}{Responsible for integration of different control plane modules.}
+        \resumeItem{}{Developed a LTE-type BSR functionality which involved writing kernel module to estimate incoming traffic}
+        \resumeItem{}{Built a library to write and read from FPGA registers}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IBM India Pvt. Ltd.}{Bangalore, India}{Software Engineering Intern (Extreme Blue Intern)}
+      {May 2017 - Jul 2017}
+      \resumeItemListStart
+        \resumeItem{}{Implemented a proof of concept that demonstrates Container Management on PowerVM platform by using OpenStack Heat, IBM Spectrum CFC.}
+
+        \resumeItem{}{Developed python automation scripts for easy  installation and deployment of OpenStack with the IBM CFC.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Great Software Laboratory Pvt. Ltd.}{Pune, India}
+      {Software Engineer}{Dec 2017 - Jan 2018}
+      \resumeItemListStart
+        \resumeItem{}{Worked on the development of cloud security solution with an objective to secure the workload of user in a cloud-based environment.}
+         \resumeItem{}{Designed and developed a user interface using Vaadin GWT for orchestration of OpenStack cloud platform.}
+        %  \resumeItem{}{Developed Docker images to support Development and Testing Teams and their pipelines.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-10pt}
+%-----------PROJECTS-----------------
+\section{Academic Projects \textit{(more on Github)}}
+  \resumeSubHeadingListStart
+    \resumeSubItem{CleanG:}{This project involves redesigning the protocol used in core of cellular network with the aim to reduce latency.}
+    \resumeSubItem{Implementation of TCP BBR in ns-3}{BBR is a congestion control algorithm proposed by Google for high bandwidth utilization while maintaining the lesser delay. This project also involved the implementation of pre-requisite features (such as pacing, rate sample, etc).}
+    \resumeSubItem{Implementation of ECN model for ns-3 TCP stack}{ECN is congestion feedback mechanism widely deployed in the internet. \textit{Status: This model is merged in the mainline of ns-3.}}
+    \resumeSubItem{Implementation of TCP DCTCP for ns-3 TCP}{Data Center TCP (DCTCP) is a standard congestion control scheme used to provide high burst tolerance, low latency and high throughput in Data Center Networks (DCNs).\textit{(Status: merged in mainline of ns-3)}}
+  \resumeSubHeadingListEnd
+
+%-------PUBLICATIONS------------------  
+\section{Publications}
+ \resumeSubHeadingListStart
+ \resumeItem{}{A. Mohammakhan, K. Ramakrishnan, \textbf{V. Jain}. ``CleanG - Improving the Architecture and Protocols for Future Cellular Networks With NFV" in IEEE/ACM Transactions on Networking. DOI: 10.1109/TNET.2020.3015946}
+ 
+    \resumeItem{}{\textbf{Vivek Jain}, Thomas R. Henderson, and Mohit P. Tahiliani. "Data Center TCP in ns-3: Implementation, Validation and Evaluation." Proceedings of the 2020 Workshop on ns-3. 2020.}
+  \resumeItem{}{\textbf{Jain, Vivek}, Viyom Mittal, and Mohit P. Tahiliani. ``Design and implementation of TCP BBR in ns-3." Proceedings of the 10th Workshop on ns-3. 2018.}
+  \resumeSubItem{}{Mittal, Viyom, \textbf{Vivek Jain}, and Mohit P. Tahiliani. ``Proportional rate reduction for ns-3 TCP." Proceedings of the 10th Workshop on ns-3. 2018.}
+  \resumeSubItem{}{\textbf{Jain, Vivek}, et al. ``Implementation and validation of BLUE and PI queue disciplines in ns-3." Simulation Modelling Practice and Theory 84 (2018): 19-37.}
+ \resumeSubHeadingListEnd
+
+%---------------------------------------
+% \section{Accomplishments}
+%  \resumeSubHeadingListStart
+%  \resumeSubItem{}{
+%     \textbf{ABC}{XYZ}{LMN}
+%     }
+%  \resumeSubHeadingListEnd
+%-------------------------------------
+%---------Teaching/Leadership Experience-------
+% \section{Teaching/Leadership Experience}
+%  \resumeSubHeadingListStart
+%   \resumeSubItem{}{ABC}
+%  \resumeSubHeadingListEnd
+\end{document}
